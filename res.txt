@@ -1,0 +1,77 @@
+Pour les 3 variantes qui suivent, j'ai utilisé cette commande-ci :
+
+python3 -m pysc2.bin.agent --map Simple64 --agent projet7.SimpleAgent --agent_race terran --agent2_race terran --difficulty medium --max_episodes 10 --step_mul 20
+
+Variante 1 et 2 : projet7.py
+
+La 1er variante consiste à créer les bâtiments nécessaires à l'entraînement des maraudeurs puis de les entraîner.
+La 2nd consiste à créer ces même bâtiments mais en n'entraîmant pas de maraudeur (ligne 279 et 280 mis en commentaire), seulement des marines.
+
+Variante 3 : projet8.py
+
+
+Variante en entraînant des marines et des maraudeurs :
+
+
+I1220 06:24:27.053273 140116462171968 sc2_env.py:510] Episode 1 finished after 9880 game steps. Outcome: [-1], reward: [-1], score: [3542]
+I1220 06:26:32.200098 140116462171968 sc2_env.py:510] Episode 2 finished after 9480 game steps. Outcome: [-1], reward: [-1], score: [3735]
+I1220 06:28:58.926663 140116462171968 sc2_env.py:510] Episode 3 finished after 11540 game steps. Outcome: [-1], reward: [-1], score: [4691]
+I1220 06:31:17.907506 140116462171968 sc2_env.py:510] Episode 4 finished after 11160 game steps. Outcome: [-1], reward: [-1], score: [4821]
+I1220 06:33:57.544750 140116462171968 sc2_env.py:510] Episode 5 finished after 11200 game steps. Outcome: [-1], reward: [-1], score: [4397]
+I1220 06:36:54.535740 140116462171968 sc2_env.py:510] Episode 6 finished after 10900 game steps. Outcome: [-1], reward: [-1], score: [4595]
+I1220 06:39:39.806177 140116462171968 sc2_env.py:510] Episode 7 finished after 9840 game steps. Outcome: [-1], reward: [-1], score: [3721]
+I1220 06:42:10.228371 140116462171968 sc2_env.py:510] Episode 8 finished after 11340 game steps. Outcome: [-1], reward: [-1], score: [4434]
+I1220 06:44:21.359068 140116462171968 sc2_env.py:510] Episode 9 finished after 10760 game steps. Outcome: [-1], reward: [-1], score: [4103]
+I1220 06:48:02.193595 140116462171968 sc2_env.py:510] Episode 10 finished after 14720 game steps. Outcome: [-1], reward: [-1], score: [5969]
+
+Moyenne des étapes avant de perdre = 11082, moyenne des scores = 4400.
+
+//////////////////////////////////////////////////////////////////////
+
+
+Variante sans entraîner des maraudeurs :
+
+
+I1220 06:52:56.865588 139740847277888 sc2_env.py:510] Episode 1 finished after 14740 game steps. Outcome: [-1], reward: [-1], score: [7362]
+I1220 06:56:38.288419 139740847277888 sc2_env.py:510] Episode 2 finished after 15200 game steps. Outcome: [-1], reward: [-1], score: [7709]
+I1220 06:59:11.089929 139740847277888 sc2_env.py:510] Episode 3 finished after 9560 game steps. Outcome: [-1], reward: [-1], score: [4278]
+I1220 07:03:57.230081 139740847277888 sc2_env.py:510] Episode 4 finished after 15140 game steps. Outcome: [-1], reward: [-1], score: [7596]
+I1220 07:06:40.358842 139740847277888 sc2_env.py:510] Episode 5 finished after 9480 game steps. Outcome: [-1], reward: [-1], score: [4185]
+I1220 07:09:18.344185 139740847277888 sc2_env.py:510] Episode 6 finished after 9460 game steps. Outcome: [-1], reward: [-1], score: [4465]
+I1220 07:13:12.285102 139740847277888 sc2_env.py:510] Episode 7 finished after 14640 game steps. Outcome: [-1], reward: [-1], score: [6915]
+I1220 07:15:22.836611 139740847277888 sc2_env.py:510] Episode 8 finished after 10680 game steps. Outcome: [-1], reward: [-1], score: [4909]
+I1220 07:18:13.478692 139740847277888 sc2_env.py:510] Episode 9 finished after 10920 game steps. Outcome: [-1], reward: [-1], score: [5126]
+I1220 07:21:08.734835 139740847277888 sc2_env.py:510] Episode 10 finished after 10740 game steps. Outcome: [-1], reward: [-1], score: [4771]
+
+Moyenne des étapes avant de perdre = 12056, moyenne des scores = 5731.
+
+//////////////////////////////////////////////////////////////////////
+
+Variante avec des thors :
+
+I0115 01:45:50.358760 139664404744000 sc2_env.py:510] Episode 1 finished after 21960 game steps. Outcome: [-1], reward: [-1], score: [6052]
+I0115 01:48:19.884324 139664404744000 sc2_env.py:510] Episode 2 finished after 13160 game steps. Outcome: [-1], reward: [-1], score: [3424]
+I0115 01:51:23.038831 139664404744000 sc2_env.py:510] Episode 3 finished after 14740 game steps. Outcome: [-1], reward: [-1], score: [4051]
+I0115 01:54:00.771327 139664404744000 sc2_env.py:510] Episode 4 finished after 13900 game steps. Outcome: [-1], reward: [-1], score: [5362]
+I0115 01:57:16.834611 139664404744000 sc2_env.py:510] Episode 5 finished after 15360 game steps. Outcome: [-1], reward: [-1], score: [3676]
+I0115 02:00:26.132485 139664404744000 sc2_env.py:510] Episode 6 finished after 16580 game steps. Outcome: [-1], reward: [-1], score: [3315]
+I0115 02:03:05.732978 139664404744000 sc2_env.py:510] Episode 7 finished after 13860 game steps. Outcome: [-1], reward: [-1], score: [2993]
+I0115 02:06:28.286356 139664404744000 sc2_env.py:510] Episode 8 finished after 16020 game steps. Outcome: [-1], reward: [-1], score: [4232]
+I0115 02:10:37.299104 139664404744000 sc2_env.py:510] Episode 9 finished after 19000 game steps. Outcome: [-1], reward: [-1], score: [5140]
+I0115 02:13:11.587728 139664404744000 sc2_env.py:510] Episode 10 finished after 11140 game steps. Outcome: [-1], reward: [-1], score: [4669]
+
+Moyenne des étapes avant de perdre = 15572, moyenne des scores = 4291.
+
+//////////////////////////////////////////////////////////////////////
+
+Variante 4 : projet9.py (Non fini)
+
+//////////////////////////// BILAN
+
+Marines+Marauders : Moyenne des étapes avant de perdre = 11082, moyenne des scores = 4400.
+
+Marines : Moyenne des étapes avant de perdre = 12056, moyenne des scores = 5731.
+
+Marines+Hellion+Thor : Moyenne des étapes avant de perdre = 15572, moyenne des scores = 4291.
+
+4ieme IA en cours de dev : IA3 avec 2 factories
