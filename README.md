@@ -12,3 +12,5 @@ Then, put these files in this directory :
 Finally, run with this command : 
 
 ```python3 -m pysc2.bin.agent --map Simple64 --agent projet7.SimpleAgent --agent_race terran --agent2_race terran --difficulty medium --max_episodes 10 --step_mul 20```
+
+Report (french only) in the file res.txt.
