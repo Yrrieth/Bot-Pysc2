@@ -2,6 +2,7 @@
 
 L3 Intelligence artificielle
 
+***
 ### Run
 
 Firstly, you need to install [Pysc2](https://github.com/deepmind/pysc2).
